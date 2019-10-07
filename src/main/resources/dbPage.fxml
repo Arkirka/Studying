@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.dbPageController">
+   <children>
+      <TableView fx:id="tableWorkers" layoutY="31.0" prefHeight="200.0" prefWidth="280.0">
+        <columns>
+          <TableColumn fx:id="workerId" prefWidth="46.0" text="id" />
+          <TableColumn fx:id="sfp" prefWidth="175.0" text="ФИО" />
+            <TableColumn fx:id="numWrkshFir" prefWidth="58.0" text="№ цеха" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableWorkorders" layoutX="283.0" layoutY="31.0" prefHeight="200.0" prefWidth="535.0">
+        <columns>
+          <TableColumn fx:id="shiftId" prefWidth="57.0" text="shift_id" />
+          <TableColumn fx:id="numWrkshSec" prefWidth="53.0" text="№ цеха" />
+            <TableColumn fx:id="month" prefWidth="54.0" text="месяц" />
+            <TableColumn fx:id="techOper" prefWidth="171.0" text="тех. операция" />
+            <TableColumn fx:id="mnCount" prefWidth="79.0" text="количество" />
+            <TableColumn fx:id="price" prefWidth="59.0" text="расценка" />
+            <TableColumn fx:id="priceAll" prefWidth="61.0" text="сумма" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateBut" layoutX="231.0" layoutY="247.0" mnemonicParsing="false" onAction="#updateDB" prefHeight="38.0" prefWidth="123.0" text="Обновить" />
+      <Button fx:id="buttonSettings" layoutX="364.0" layoutY="247.0" mnemonicParsing="false" onAction="#goSettingsPage" prefHeight="38.0" prefWidth="157.0" text="Настройки базы данных" />
+   </children>
+</AnchorPane>

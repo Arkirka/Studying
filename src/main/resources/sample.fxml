@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="433.0" prefWidth="601.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.ControllerFirst">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="434.0" prefWidth="619.0">
+         <children>
+            <Button fx:id="ConnectBut" layoutX="167.0" layoutY="75.0" mnemonicParsing="false" onAction="#connectDB" prefHeight="43.0" prefWidth="251.0" text="Подключиться к БД" />
+            <Label fx:id="infoLabel" layoutX="167.0" layoutY="162.0" prefHeight="17.0" prefWidth="251.0" />
+            <Button fx:id="transitionBut" disable="true" layoutX="168.0" layoutY="271.0" mnemonicParsing="false" onAction="#goDBScene" prefHeight="43.0" prefWidth="251.0" text="Перейти к БД" />
+         </children></Pane>
+   </children>
+</GridPane>
