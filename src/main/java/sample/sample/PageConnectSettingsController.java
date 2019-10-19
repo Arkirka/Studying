@@ -38,6 +38,10 @@ public class PageConnectSettingsController {
     @FXML // fx:id="textHost"
     private TextField textHost; // Value injected by FXMLLoader
 
+
+    @FXML // fx:id="textSchema"
+    private TextField textSchema; // Value injected by FXMLLoader
+
     @FXML // fx:id="buttonSetDefault"
     private Button buttonSetDefault; // Value injected by FXMLLoader
 
@@ -50,11 +54,12 @@ public class PageConnectSettingsController {
 
     @FXML
     void changeConnect(ActionEvent event) {
-        DB_connect.host = textHost.getText();
-        DB_connect.socket = textSocket.getText();
-        DB_connect.port = textPort.getText();
-        DB_connect.DB_UName = textName.getText();
-        DB_connect.DB_UPassword = textPassword.getText();
+        DB_connect.setHost(textHost.getText());
+        DB_connect.setSocket(textSocket.getText());
+        DB_connect.setPort(textPort.getText());
+        DB_connect.setDB_UName(textName.getText());
+        DB_connect.setDB_UPassword(textPassword.getText());
+        DB_connect.setSchema(textSchema.getText());
 
         ControllerFirst controllerFirst = new ControllerFirst();
         controllerFirst.getSettingsWindow().close();

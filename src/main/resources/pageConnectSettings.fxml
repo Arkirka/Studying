@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="359.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.PageConnectSettingsController">
    <children>
       <Label layoutX="63.0" layoutY="71.0" text="Host :">
@@ -47,5 +46,11 @@
       </Label>
       <TextField fx:id="textName" alignment="CENTER" layoutX="361.0" layoutY="69.0" text="root" />
       <TextField fx:id="textPassword" alignment="CENTER" layoutX="361.0" layoutY="97.0" text="root" />
+      <Label layoutX="282.0" layoutY="126.0" text="Schema">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSchema" alignment="CENTER" layoutX="361.0" layoutY="124.0" text="workshop" />
    </children>
 </AnchorPane>
