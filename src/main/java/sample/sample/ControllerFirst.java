@@ -15,6 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 import static sample.sample.Main.*;
 
@@ -37,6 +38,11 @@ public class ControllerFirst {
     @FXML // fx:id="transitionBut"
     private Button transitionBut; // Value injected by FXMLLoader
 
+    @FXML // fx:id="buttonConnectSettings"
+    private Button buttonConnectSettings; // Value injected by FXMLLoader
+
+    static private Stage settingsWindow = null;
+
     @FXML
     void connectDB(ActionEvent event)
     {
@@ -52,13 +58,25 @@ public class ControllerFirst {
     }
 
     @FXML
+    void toConnectSettings(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/pageConnectSettings.fxml"));
+            settingsWindow = new Stage();
+            settingsWindow.setScene(new Scene(root, 549, 359));
+            settingsWindow.show();
+        } catch (IOException er) {
+            er.printStackTrace();
+        }
+    }
+
+    @FXML
     void goDBScene(ActionEvent event) {
         if (fxConnection.connected)
         {
             setFxUrl("/dbPage.fxml");
             try {
                 Parent root = FXMLLoader.load(getClass().getResource(getFxUrl()));
-                stage.setScene(new Scene(root, 818, 460));
+                getStage().setScene(new Scene(root, 818, 460));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -66,6 +84,14 @@ public class ControllerFirst {
         {
             infoLabel.setText("Error");
         }
+    }
+
+    public Stage getSettingsWindow() {
+        return settingsWindow;
+    }
+
+    public void setSettingsWindow(Stage settingsWindow) {
+        this.settingsWindow = settingsWindow;
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete

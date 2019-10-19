@@ -3,22 +3,23 @@ package sample.sample;
 import java.sql.*;
 
 public class DB_connect {
-    //Constants
-    public static final String DB_URL = "jdbc:MySQL://localhost:3306/workshop" +
+
+    public static   String host = "localhost";
+    public static  String socket = "MySQL";
+    public static String port = "3306";
+    public String DB_URL = "jdbc:" + getSocket() + "://" + getHost() + ":" + getPort() + "/workshop" +
             "?verifyServerCertificate=false"+
             "&useSSL=false"+
             "&requireSSL=false"+
             "&useLegacyDatetimeCode=false"+
             "&amp"+
             "&serverTimezone=UTC";
-    public static final String DB_UName = "root";
-    public static final String DB_UPassword = "Vtvabc123!";
+    public static  String DB_UName = "root";
+    public static  String DB_UPassword = "root";
     public Boolean connected = false;
     public static Connection connection = null;  // obj for connection
 
     DB_connect() {
-
-
 
         try
         {
@@ -37,6 +38,30 @@ public class DB_connect {
         {
             connected = true;
         }
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public String getSocket() {
+        return socket;
+    }
+
+    public void setSocket(String socket) {
+        this.socket = socket;
+    }
+
+    public String getPort() {
+        return port;
+    }
+
+    public void setPort(String port) {
+        this.port = port;
     }
 
 }

@@ -8,12 +8,12 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     private static String FX_URL = "/sample.fxml";
-    public static Stage stage = null;
+    private static Stage stage = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource(getFxUrl()));
-        stage = new Stage();
+        setStage(new Stage());
         stage.setTitle("Interaction with the Database");
         stage.setScene(new Scene(root, 601, 433));
         stage.show();
@@ -36,4 +36,14 @@ public class Main extends Application {
     {
         FX_URL = fxUrl;
     }
+
+
+    public static Stage getStage() {
+        return stage;
+    }
+
+    public static void setStage(Stage stage) {
+        Main.stage = stage;
+    }
+
 }
