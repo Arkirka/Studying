@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="359.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.PageConnectSettingsController">
+   <children>
+      <Label layoutX="63.0" layoutY="71.0" text="Host :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="99.0" text="Socket :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="126.0" text="Port :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textHost" alignment="CENTER" layoutX="125.0" layoutY="69.0" text="localhost" />
+      <TextField fx:id="textSocket" alignment="CENTER" layoutX="125.0" layoutY="97.0" text="MySQL" />
+      <TextField fx:id="textPort" alignment="CENTER" layoutX="125.0" layoutY="124.0" text="3306" />
+      <Button fx:id="buttonSetDefault" layoutX="81.0" layoutY="160.0" mnemonicParsing="false" onAction="#setDefault" prefHeight="25.0" prefWidth="167.0" text="Поставить по умолчанию" />
+      <Button fx:id="buttonChangeConnect" layoutX="207.0" layoutY="226.0" mnemonicParsing="false" onAction="#changeConnect" prefHeight="42.0" prefWidth="134.0" text="Применить" />
+      <Label layoutX="171.0" layoutY="24.0" text="Настройки подключения">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="71.0" text="Name :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="99.0" text="Password :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textName" alignment="CENTER" layoutX="361.0" layoutY="69.0" text="root" />
+      <TextField fx:id="textPassword" alignment="CENTER" layoutX="361.0" layoutY="97.0" text="root" />
+   </children>
+</AnchorPane>
