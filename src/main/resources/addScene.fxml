@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="588.0" prefWidth="534.0" style="-fx-background-color: #E5E5E5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.addSceneController">
+   <children>
+      <Label layoutX="91.0" layoutY="14.0" text="Добавление записи в таблицу Рабочие">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSFP" layoutX="171.0" layoutY="62.0" prefHeight="25.0" prefWidth="245.0" />
+      <TextField fx:id="textNumWrkshW" layoutX="171.0" layoutY="101.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="12.0" layoutY="65.0" text="Фамилия Имя Отчество">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="104.0" text="№ цеха">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonAddEntryW" layoutX="212.0" layoutY="140.0" mnemonicParsing="false" onAction="#addEntryW" prefHeight="38.0" prefWidth="111.0" text="Добавить">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonAddEntryWO" layoutX="212.0" layoutY="500.0" mnemonicParsing="false" onAction="#addEntryWO" prefHeight="38.0" prefWidth="111.0" text="Добавить">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="66.0" layoutY="287.0" text="Месяц">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="248.0" text="№ цеха">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textMonth" layoutX="173.0" layoutY="284.0" prefHeight="25.0" prefWidth="245.0" />
+      <TextField fx:id="textNumWrkshWO" layoutX="173.0" layoutY="245.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="55.0" layoutY="198.0" text="Добавление записи в таблицу Наряды рабочих">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textTechOper" layoutX="171.0" layoutY="327.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="12.0" layoutY="330.0" text="Техническая операция">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textMnCount" layoutX="171.0" layoutY="365.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="50.0" layoutY="368.0" text="Количество">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPrice" layoutX="171.0" layoutY="406.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="56.0" layoutY="409.0" text="Расценка">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textPriceAll" layoutX="171.0" layoutY="448.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="64.0" layoutY="451.0" text="Сумма">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAddW" layoutX="341.0" layoutY="151.0">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAddWO" layoutX="341.0" layoutY="510.0">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

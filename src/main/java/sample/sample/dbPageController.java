@@ -111,7 +111,7 @@ public class dbPageController {
     void goSettingsPage(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/dbSettingsPage.fxml"));
         Stage settingsPage = new Stage();
-        settingsPage.setScene(new Scene(root, 549, 359));
+        settingsPage.setScene(new Scene(root, 699, 588));
         settingsPage.show();
     }
 

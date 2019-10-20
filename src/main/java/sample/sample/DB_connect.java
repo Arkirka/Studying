@@ -17,7 +17,7 @@ public class DB_connect {
             "&amp"+
             "&serverTimezone=UTC";
     private static  String DB_UName = "root";
-    private static  String DB_UPassword = "root";
+    private static  String DB_UPassword = "Vtvabc123!";
     public Boolean connected = false;
     public static Connection connection = null;  // obj for connection
 
