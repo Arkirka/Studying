@@ -76,7 +76,7 @@ public class ControllerFirst {
             setFxUrl("/dbPage.fxml");
             try {
                 Parent root = FXMLLoader.load(getClass().getResource(getFxUrl()));
-                getStage().setScene(new Scene(root, 818, 460));
+                getStage().setScene(new Scene(root, 934, 586));
             } catch (IOException e) {
                 e.printStackTrace();
             }

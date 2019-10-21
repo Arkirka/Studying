@@ -1,32 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="460.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.dbPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="934.0" style="-fx-background-color: #E5E5E5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.dbPageController">
    <children>
-      <TableView fx:id="tableWorkers" layoutY="31.0" prefHeight="200.0" prefWidth="280.0">
+      <Pane layoutX="-6.0" prefHeight="538.0" prefWidth="202.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="buttonSettings" layoutX="-6.0" mnemonicParsing="false" onAction="#goSettingsPage" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="Настройки базы данных" />
+            <Button fx:id="buttonReport" layoutX="-6.0" layoutY="38.0" mnemonicParsing="false" onAction="#createReport" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="Создать отчёт" />
+         </children>
+      </Pane>
+      <TableView fx:id="tableWorkers" layoutX="243.0" layoutY="63.0" prefHeight="206.0" prefWidth="612.0">
         <columns>
-          <TableColumn fx:id="workerId" prefWidth="46.0" text="id" />
-          <TableColumn fx:id="sfp" prefWidth="175.0" text="ФИО" />
-            <TableColumn fx:id="numWrkshFir" prefWidth="58.0" text="№ цеха" />
+          <TableColumn fx:id="workerId" prefWidth="79.0" text="id" />
+          <TableColumn fx:id="sfp" prefWidth="443.0" text="ФИО" />
+            <TableColumn fx:id="numWrkshFir" prefWidth="89.0" text="№ цеха" />
         </columns>
       </TableView>
-      <TableView fx:id="tableWorkorders" layoutX="283.0" layoutY="31.0" prefHeight="200.0" prefWidth="535.0">
+      <TableView fx:id="tableWorkorders" layoutX="243.0" layoutY="318.0" prefHeight="206.0" prefWidth="612.0">
         <columns>
           <TableColumn fx:id="shiftId" prefWidth="57.0" text="shift_id" />
           <TableColumn fx:id="numWrkshSec" prefWidth="53.0" text="№ цеха" />
             <TableColumn fx:id="month" prefWidth="54.0" text="месяц" />
-            <TableColumn fx:id="techOper" prefWidth="171.0" text="тех. операция" />
-            <TableColumn fx:id="mnCount" prefWidth="79.0" text="количество" />
-            <TableColumn fx:id="price" prefWidth="59.0" text="расценка" />
-            <TableColumn fx:id="priceAll" prefWidth="61.0" text="сумма" />
+            <TableColumn fx:id="techOper" prefWidth="184.0" text="тех. операция" />
+            <TableColumn fx:id="mnCount" prefWidth="97.0" text="количество" />
+            <TableColumn fx:id="price" prefWidth="79.0" text="расценка" />
+            <TableColumn fx:id="priceAll" prefWidth="87.0" text="сумма" />
         </columns>
       </TableView>
-      <Button fx:id="updateBut" layoutX="231.0" layoutY="247.0" mnemonicParsing="false" onAction="#updateDB" prefHeight="38.0" prefWidth="123.0" text="Обновить" />
-      <Button fx:id="buttonSettings" layoutX="364.0" layoutY="247.0" mnemonicParsing="false" onAction="#goSettingsPage" prefHeight="38.0" prefWidth="157.0" text="Настройки базы данных" />
+      <Pane layoutX="-6.0" layoutY="538.0" prefHeight="58.0" prefWidth="941.0" style="-fx-background-color: #b7b7b7; -fx-border-color: #9696ea; -fx-border-width: 1px;">
+         <children>
+            <Button fx:id="updateBut" layoutX="788.0" layoutY="7.0" mnemonicParsing="false" onAction="#updateDB" prefHeight="32.0" prefWidth="123.0" stylesheets="@panel.css" text="Обновить">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="463.0" layoutY="22.0" text="Таблица &quot;Рабочие&quot;">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="282.0" text="Таблица &quot;Наряды рабочих&quot;">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

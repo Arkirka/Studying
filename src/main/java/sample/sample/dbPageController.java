@@ -77,6 +77,9 @@ public class dbPageController {
     @FXML // fx:id="mnCount"
     private TableColumn<WorkOrders, Integer> mnCount; // Value injected by FXMLLoader
 
+    @FXML // fx:id="buttonReport"
+    private Button buttonReport; // Value injected by FXMLLoader
+
     @FXML
     void updateDB(ActionEvent event) {
         workersData.clear();
@@ -129,6 +132,11 @@ public class dbPageController {
         while (rst.next()) {
             workordersData.add(new WorkOrders(rst.getInt(1),rst.getInt(2),rst.getInt(3), rst.getString(4), rst.getInt(5), rst.getInt(6), rst.getInt(7)));
         }
+    }
+
+    @FXML
+    void createReport(ActionEvent event) {
+
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete

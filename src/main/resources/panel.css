@@ -1,26 +1,23 @@
 .button {
     -fx-padding: 5 22 5 22;
     -fx-background-radius: 0;
-    -fx-background-color: white;
+    -fx-background-color: #FFF;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-font-size: 11pt;
     -fx-text-fill: black;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-border-color: #9696ea;
+    -fx-border-width: 1px;
+
 }
 
 .button:hover {
-    -fx-background-color:  #E5E5E5;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-size: 12pt;
 }
 
 .button:pressed, .button:default:hover:pressed {
-  -fx-background-color:  #E5E5E5;
-  -fx-text-fill: white;
-}
-
-.button:focused {
-
-}
-
-.updated {
-
+    -fx-padding: 3 16 3 16;
+    -fx-font-size: 14pt;
 }
