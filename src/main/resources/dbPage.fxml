@@ -12,7 +12,9 @@
       <Pane layoutX="-6.0" prefHeight="538.0" prefWidth="202.0" style="-fx-background-color: white;">
          <children>
             <Button fx:id="buttonSettings" layoutX="-6.0" mnemonicParsing="false" onAction="#goSettingsPage" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="Настройки базы данных" />
-            <Button fx:id="buttonReport" layoutX="-6.0" layoutY="38.0" mnemonicParsing="false" onAction="#createReport" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="Создать отчёт" />
+            <Button fx:id="buttonChart" layoutX="-6.0" layoutY="38.0" mnemonicParsing="false" onAction="#toChartPage" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="График" />
+            <Button fx:id="buttonReport" layoutX="-6.0" layoutY="76.0" mnemonicParsing="false" onAction="#createReport" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="Создать отчёт" />
+            <Button fx:id="buttonPrintReport" layoutX="-6.0" layoutY="114.0" mnemonicParsing="false" onAction="#printReport" prefHeight="38.0" prefWidth="208.0" styleClass="menu" stylesheets="@buttons.css" text="Напечатать отчёт" />
          </children>
       </Pane>
       <TableView fx:id="tableWorkers" layoutX="243.0" layoutY="63.0" prefHeight="206.0" prefWidth="612.0">
