@@ -149,7 +149,11 @@ public class dbPageController {
     }
 
     @FXML
-    void toChartPage(ActionEvent event) throws IOException {
+    void toChartPage(ActionEvent event) throws IOException, SQLException {
+        Statement st = null;
+        st = DB_connect.connection.createStatement();
+        ResultSet rst = null;
+
         CategoryAxis xAxis = new CategoryAxis();
         xAxis.setLabel("Показатели");
 
@@ -161,9 +165,15 @@ public class dbPageController {
 
         XYChart.Series<String, Number> dataSeries1 = new XYChart.Series<String, Number>();
 
-        dataSeries1.getData().add(new XYChart.Data<String, Number>("Рабочие", 20.973));
-        dataSeries1.getData().add(new XYChart.Data<String, Number>("Смены", 4.429));
-        dataSeries1.getData().add(new XYChart.Data<String, Number>("Цеха", 2.792));
+        rst = st.executeQuery("SELECT COUNT(*) FROM рабочие;");
+        while (rst.next()) {
+            dataSeries1.getData().add(new XYChart.Data<String, Number>("Рабочие", rst.getInt(1)));
+        }
+        rst = st.executeQuery("SELECT COUNT(*) FROM наряды_рабочих;");
+        while (rst.next()) {
+            dataSeries1.getData().add(new XYChart.Data<String, Number>("Смены", rst.getInt(1)));
+        }
+        dataSeries1.getData().add(new XYChart.Data<String, Number>("Цеха", 5));
 
         barChart.getData().add(dataSeries1);
 
