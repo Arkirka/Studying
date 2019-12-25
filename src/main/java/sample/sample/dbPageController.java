@@ -52,6 +52,21 @@ public class dbPageController {
     @FXML // fx:id="buttonSettings"
     private Button buttonSettings; // Value injected by FXMLLoader
 
+    @FXML // fx:id="buttonChart"
+    private Button buttonChart; // Value injected by FXMLLoader
+
+    @FXML // fx:id="buttonPrintReport"
+    private Button buttonPrintReport; // Value injected by FXMLLoader
+
+    @FXML // fx:id="updateBut"
+    private Button updateBut; // Value injected by FXMLLoader
+
+    @FXML
+    private Button buttonValue;
+
+    @FXML
+            private Button buttonSelection;
+
     @FXML // fx:id="numWrkshFir"
     private TableColumn<Workers, Integer> numWrkshFir; // Value injected by FXMLLoader
 
@@ -64,12 +79,6 @@ public class dbPageController {
     @FXML // fx:id="workerId"
     private TableColumn<Workers, Integer> workerId; // Value injected by FXMLLoader
 
-    @FXML // fx:id="buttonChart"
-    private Button buttonChart; // Value injected by FXMLLoader
-
-    @FXML // fx:id="buttonPrintReport"
-    private Button buttonPrintReport; // Value injected by FXMLLoader
-
     @FXML // fx:id="numWrkshSec"
     private TableColumn<WorkOrders, Integer> numWrkshSec; // Value injected by FXMLLoader
 
@@ -78,9 +87,6 @@ public class dbPageController {
 
     @FXML // fx:id="techOper"
     private TableColumn<WorkOrders, String> techOper; // Value injected by FXMLLoader
-
-    @FXML // fx:id="updateBut"
-    private Button updateBut; // Value injected by FXMLLoader
 
     @FXML // fx:id="month"
     private TableColumn<WorkOrders, Integer> month; // Value injected by FXMLLoader
@@ -93,6 +99,8 @@ public class dbPageController {
 
     @FXML // fx:id="buttonReport"
     private Button buttonReport; // Value injected by FXMLLoader
+
+
 
     @FXML
     void updateDB(ActionEvent event) {
@@ -181,6 +189,22 @@ public class dbPageController {
         Stage settingsPage = new Stage();
         settingsPage.setScene(new Scene(vbox, 400, 400));
         settingsPage.show();
+    }
+
+    @FXML
+    void toValuePage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/valuePage.fxml"));
+        Stage valuePage = new Stage();
+        valuePage.setScene(new Scene(root, 600, 400));
+        valuePage.show();
+    }
+
+    @FXML
+    void toSelectionPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/selectionPage.fxml"));
+        Stage selectionPage = new Stage();
+        selectionPage.setScene(new Scene(root, 600, 400));
+        selectionPage.show();
     }
 
     @FXML
@@ -285,6 +309,14 @@ public class dbPageController {
         doc.print();
     }
 
+    @FXML
+    void openDiscription(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/discriptionPage.fxml"));
+        Stage discriptPage = new Stage();
+        discriptPage.setScene(new Scene(root, 600, 400));
+        discriptPage.show();
+    }
+
 
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
@@ -300,6 +332,8 @@ public class dbPageController {
         assert month != null : "fx:id=\"month\" was not injected: check your FXML file 'dbPage.fxml'.";
         assert sfp != null : "fx:id=\"spf\" was not injected: check your FXML file 'dbPage.fxml'.";
         assert mnCount != null : "fx:id=\"mnCount\" was not injected: check your FXML file 'dbPage.fxml'.";
+        assert buttonValue != null : "fx:id=\"buttonValue\" was not injected: check your FXML file 'dbPage.fxml'.";
+        assert buttonSelection != null : "fx:id=\"buttonSelection\" was not injected: check your FXML file 'dbPage.fxml'.";
 
     }
 }

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: sample.sample.Main
+Class-Path: mysql-connector-java-8.0.17.jar itextpdf-5.5.10.jar pdfbox-0
+ .7.3.jar pdfbox-2.0.4.jar fontbox-2.0.4.jar itextpdf-5.5.13.1.jar proto
+ buf-java-3.6.1.jar commons-logging-1.2.jar
+

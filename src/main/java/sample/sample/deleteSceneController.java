@@ -25,7 +25,7 @@ public class deleteSceneController {
     private URL location;
 
     @FXML // fx:id="textID"
-    private TextField textID; // Value injected by FXMLLoader
+        private TextField textID; // Value injected by FXMLLoader
 
     @FXML // fx:id="buttonDelete"
     private Button buttonDelete; // Value injected by FXMLLoader

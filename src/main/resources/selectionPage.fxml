@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.selectionPageController">
+   <children>
+      <TextField fx:id="textIntput" layoutX="53.0" layoutY="45.0" prefHeight="25.0" prefWidth="494.0" promptText="Введите сюда условие" />
+      <Button fx:id="buttonFind" layoutX="230.0" layoutY="313.0" mnemonicParsing="false" onAction="#doFind" prefHeight="41.0" prefWidth="142.0" text="Найти">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textOutput" editable="false" focusTraversable="false" layoutX="54.0" layoutY="90.0" prefHeight="200.0" prefWidth="494.0" />
+      <RadioButton fx:id="buttonWorker" layoutX="170.0" layoutY="14.0" mnemonicParsing="false" text="Рабочие" />
+      <RadioButton fx:id="buttonShift" layoutX="329.0" layoutY="14.0" mnemonicParsing="false" text="Наряды рабочих" />
+   </children>
+</AnchorPane>
