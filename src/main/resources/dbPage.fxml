@@ -38,7 +38,7 @@
             <TableColumn fx:id="priceAll" prefWidth="87.0" text="сумма" />
         </columns>
       </TableView>
-      <Pane layoutX="-6.0" layoutY="538.0" prefHeight="58.0" prefWidth="941.0" style="-fx-background-color: #b7b7b7; -fx-border-color: #9696ea; -fx-border-width: 1px;">
+      <Pane layoutX="-6.0" layoutY="538.0" prefHeight="58.0" prefWidth="941.0" style="-fx-background-color: #b7b7b7; -fx-border-width: 1px;">
          <children>
             <Button fx:id="updateBut" layoutX="788.0" layoutY="7.0" mnemonicParsing="false" onAction="#updateDB" prefHeight="32.0" prefWidth="123.0" stylesheets="@panel.css" text="Обновить">
                <font>
