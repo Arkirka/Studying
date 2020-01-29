@@ -15,7 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.SubScene;
 import javafx.scene.control.Button;
 
-public class dbSettingsPageController {
+public class DbSettingsPageController {
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;

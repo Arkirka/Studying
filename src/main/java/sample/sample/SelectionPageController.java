@@ -19,7 +19,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.TextFlow;
 
-public class selectionPageController {
+public class SelectionPageController {
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;

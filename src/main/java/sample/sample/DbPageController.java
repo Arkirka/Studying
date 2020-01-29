@@ -32,7 +32,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.pdfbox.pdmodel.PDDocument;
 
-public class dbPageController {
+public class DbPageController {
 
     private ObservableList<Workers> workersData = FXCollections.observableArrayList();
     private ObservableList<WorkOrders> workordersData = FXCollections.observableArrayList();

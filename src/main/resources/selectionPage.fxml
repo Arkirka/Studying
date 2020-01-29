@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.selectionPageController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample.SelectionPageController">
    <children>
       <TextField fx:id="textIntput" layoutX="53.0" layoutY="45.0" prefHeight="25.0" prefWidth="494.0" promptText="Введите сюда условие" />
       <Button fx:id="buttonFind" layoutX="230.0" layoutY="313.0" mnemonicParsing="false" onAction="#doFind" prefHeight="41.0" prefWidth="142.0" text="Найти">

@@ -16,7 +16,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
-public class valuePageController {
+public class ValuePageController {
 
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
