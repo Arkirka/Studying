@@ -5,6 +5,7 @@ package sample.sample;
 
 
 import java.awt.print.PrinterException;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -305,7 +306,8 @@ public class DbPageController {
     @FXML
     void printReport(ActionEvent event) throws IOException, PrinterException, SQLException, DocumentException {
         createReport(event);
-        PDDocument doc = PDDocument.load("Report.pdf");
+        File file = new File("Report.pdf");
+        PDDocument doc = PDDocument.load(file);
         doc.print();
     }
 
