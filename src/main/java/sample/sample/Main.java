@@ -6,6 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * @author Arkirka
+ */
+
 public class Main extends Application {
     private static String FX_URL = "/sample.fxml";
     private static Stage stage = null;

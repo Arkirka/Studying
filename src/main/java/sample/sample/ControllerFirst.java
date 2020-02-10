@@ -3,6 +3,9 @@
  */
 
 package sample.sample;
+/**
+ * @author Arkirka
+ */
 
 import java.io.IOException;
 import java.net.URL;

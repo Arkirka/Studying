@@ -1,4 +1,7 @@
 package sample.sample;
+/**
+ * @author Arkirka
+ */
 
 import java.sql.*;
 

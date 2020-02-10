@@ -1,4 +1,7 @@
 package sample.sample;
+/**
+ * @author Arkirka
+ */
 
 public class WorkOrders {
     private int shiftId;

@@ -1,9 +1,10 @@
 package sample.sample;
-
+/**
+ * @author Arkirka
+ */
 /**
  * Sample Skeleton for 'editScene.fxml' Controller Class
  */
-
 
 import java.net.URL;
 import java.sql.SQLException;

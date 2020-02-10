@@ -1,5 +1,7 @@
 package sample.sample;
-
+/**
+ * @author Arkirka
+ */
 /**
  * Sample Skeleton for 'dbSettingsPage.fxml' Controller Class
  */

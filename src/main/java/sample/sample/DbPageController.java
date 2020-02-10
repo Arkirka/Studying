@@ -1,5 +1,8 @@
 package sample.sample;
 /**
+ * @author Arkirka
+ */
+/**
  * Sample Skeleton for 'dbPage.fxml' Controller Class
  */
 
@@ -222,7 +225,6 @@ public class DbPageController {
             e.printStackTrace();
         }
         document.open();
-        //подключаем файл шрифта, который поддерживает кириллицу
         BaseFont bf = BaseFont.createFont("C:\\Windows\\Fonts\\ARIAL.TTF", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
         // tuning font
         Font headFont = new Font(bf, 16);
